@@ -1,0 +1,388 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #00AAFF;
+    padding: 30px;
+    text-align: center;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    margin-left: 10px;
+}
+
+
+
+nav {
+    background-color: #FFD400;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 10px;
+    padding: 5px 15px;
+    background-color: #00AAFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+footer {
+    background-color: #00AAFF;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 100%;
+    flex: 1;
+}
+
+.form-group input,
+.form-group select {
+    flex: 2;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .form-group label,
+    .form-group input,
+    .form-group select {
+        width: auto;
+    }
+}
+
+.pill-group input[type="checkbox"] {
+    display: none;
+}
+
+.pill-group label {
+    padding: 10px 15px;
+    border: 1px solid #4CAF50;
+    margin-right: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.pill-group input[type="checkbox"]:checked+label {
+    background-color: blue;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    /* Or whatever width you desire */
+    margin: 0 auto;
+    /* This centers the container */
+    padding: 0 20px;
+    /* Optional: some horizontal padding to ensure content doesn't touch the edges */
+    margin-top: 40px;
+}
+
+.carousel-inner {
+    height: 450px;
+    text-align: center;
+    line-height: 450px;
+}
+
+.carousel-inner .carousel-item img {
+    max-height: 450px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.profile-image {
+    height: 150px !important;
+    width: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Reset & basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#who-we-are {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f9fafc;
+    padding: 60px 0;
+}
+
+.section-header h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.profile {
+    background-color: #ffffff;
+    width: 320px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+}
+
+
+/* ... [Previous CSS without the image-wrapper and profile-image parts] ... */
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    /* Adjusted size for polaroid effect */
+    width: 220px;
+    /* Added width for polaroid effect */
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-5deg);
+    /* Tilted rotation */
+    background-color: #ffffff;
+    /* Polaroid background */
+    padding: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow to give depth */
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    /* Transition for hover effect */
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+
+.profile h3 {
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.profile p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+#about-us {
+    background-color: #f6f7f9;
+    padding: 40px 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.content-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.decorative-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #e74c3c;
+    /* A bold color to make the icon stand out */
+}
+
+#about-us h2 {
+    font-size: 2.2rem;
+    color: #34495e;
+    font-weight: 600;
+    border-left: 2px solid #e74c3c;
+    /* Vertical line */
+    padding-left: 15px;
+}
+
+.text-content {
+    border-left: 2px solid #e0e0e0;
+    /* A lighter vertical line for continuity */
+    padding-left: 30px;
+    /* A bit more padding for the content */
+}
+
+#about-us p {
+    color: #7f8c8d;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+#about-us p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+#service-area {
+    background-color: #f9fafc;
+    /* Soft background color */
+    padding: 40px 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Center content */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+#service-area h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 500;
+}
+
+#service-area h2::after {
+    /* Decorative underline */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 100px;
+    background-color: #e74c3c;
+    /* Accent color */
+}
+
+#service-area p {
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.booking-link {
+    color: #e74c3c;
+    /* Accent color */
+    text-decoration: none;
+    border-bottom: 2px solid #e74c3c;
+    /* Makes the link look more prominent */
+    padding: 2px 0;
+    /* Space for the underline */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.booking-link:hover {
+    color: #c0392b;
+    /* Darken the color a bit on hover */
+}
